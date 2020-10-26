@@ -1,0 +1,6 @@
+"random_gamemode"
+{
+	"title"		"Escape from tarkov like gamemode attempt lmfao"
+	"base"		"base"
+	"menusystem"	"1"
+}
