@@ -14,7 +14,7 @@ local FreezeTime = 0.10
 local Delay = CurTime() + 60 * RoundTime
 local IsFreezeTime = false
 
-function GM:Tick()
+local function RoundSystem()
 	local Timer = Delay - CurTime()
 	
 	if IsFreezeTime then
@@ -35,4 +35,8 @@ function GM:Tick()
 		Human:SetNWInt( 'RoundTime', RoundTime )
 		--Human:SetNWBool( 'IsFreezeTime', IsFreezeTime )
 	end
+end
+
+function GM:Tick()
+	RoundSystem()
 end
