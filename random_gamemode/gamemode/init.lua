@@ -29,7 +29,7 @@ local function RoundSystem()
 		end
 	end
 	
-	print( string.FormattedTime( Timer, '%2i:%02i' ), 'ft: ' .. tostring( IsFreezeTime ) )
+	print( 'rt: ' .. string.FormattedTime( Timer, '%2i:%02i' ), 'isft: ' .. tostring( IsFreezeTime ) )
 	
 	for Index, Human in pairs( player.GetHumans() ) do
 		Human:SetNWInt( 'RoundTime', RoundTime )
