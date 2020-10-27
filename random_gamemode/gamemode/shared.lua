@@ -10,3 +10,9 @@ function GM:PlayerSpawn(player)
 	player_manager.SetPlayerClass(player, "player_random");
 	BaseClass.PlayerSpawn(self, player);
 end
+
+function GM:StartCommand( Player, CUserCmd )
+	if Player:GetNWBool( 'IsFreezeTime' ) then
+		CUserCmd:ClearMovement()
+	end
+end
