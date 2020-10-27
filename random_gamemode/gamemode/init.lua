@@ -9,7 +9,7 @@ function GM:PlayerCanHearPlayersVoice(listener, talker)
 	return listener:GetPos():DistToSqr(talker:GetPos()) > 250000, true;
 end
 
-local RoundTime = 0.20
+local RoundTime = 15
 local FreezeTime = 0.10
 local Delay = CurTime() + 60 * RoundTime
 local IsFreezeTime = false
